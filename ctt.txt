@@ -1,0 +1,11 @@
+Reference : https://codelapan.com/post/laravel-8-rest-api-authentication-dengan-sanctum
+
+Install With Version
+# composer create-project laravel/laravel:^8.0 app-api-sanctum
+# composer require laravel/sanctum:^2.1
+
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator; 
+
+
+password all : rahasia1
