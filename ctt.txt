@@ -1,4 +1,7 @@
-Reference : https://codelapan.com/post/laravel-8-rest-api-authentication-dengan-sanctum
+Reference : 
+1 https://codelapan.com/post/laravel-8-rest-api-authentication-dengan-sanctum
+2 https://codelapan.com/post/membuat-rest-api-crud-di-laravel-8-dengan-sanctum
+3 https://qadrlabs.com/post/rest-api-crud-with-laravel-sanctum
 
 Install With Version
 # composer create-project laravel/laravel:^8.0 app-api-sanctum
@@ -7,5 +10,16 @@ Install With Version
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator; 
 
-
 password all : rahasia1
+
+Comment This
+ 'api' => [
+            // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class, <-- Comment This Oke
+            'throttle:api',
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        ],
+
+---------------------------
+
+Frontend
+- crud-react same in folder this project
